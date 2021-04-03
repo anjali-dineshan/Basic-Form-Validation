@@ -1,0 +1,95 @@
+body.main-page{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.main-page .main
+{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 26px;
+    box-shadow: 4px 5px red;
+    border: 1px solid red;
+    background-color: white;
+    margin-top: 3%;
+    
+}
+.main-page .main a
+{
+    border: 1px solid red;
+    padding: 13px 93px;
+    border-radius: 12px;
+    display: flex;
+    margin-bottom: 22px;
+    color: #000;
+    text-decoration: none;
+    
+}
+.main-page .main a:hover
+{
+    text-decoration: none;
+    opacity: 0.5;
+}
+.main-page.main h1
+{
+    margin-bottom: 22px;
+}
+.login table
+{
+    margin: 0 auto;
+}
+.login h1
+{
+    text-align: center;
+
+}
+.login input
+{
+    width: 204px;
+    height: 32px;
+}
+.login table td
+{
+    padding-bottom: 19px;
+}
+.login .button-div
+{
+    text-align: center;
+}
+.login label
+{
+    padding-right: 21px;
+}
+.reg-table
+{
+    margin: 0 auto;
+    min-width: 545px;
+}
+#reg-form
+{
+    text-align: center;
+}
+.reg-table input{
+    width: 100%;
+    padding: 7px 0px;
+}
+.reg-table td{
+    padding: 12px 0px;
+}
+.reg-table textarea
+{
+    width: 100%;
+}
+tr .error
+{
+    border: 3px solid #ef380e;
+}
+#name:focus #errorName
+{
+    display: none!important;
+}
+#errorName, #errorEmail, #errorPass, #errorConfpass
+{
+    color: #ef380e;
+}
