@@ -6,22 +6,22 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="\style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form id="reg-form" action="" name="form" onsubmit="checkInputs()">
+        <form id="reg-form" action="https://httpstatus.io/" name="form" onsubmit="return checkInputs()">
             <table class="reg-table">
                 <h1>Registration</h1>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <tr>
                     <td><label>Name</label></td>
-                    <td><input id="name" type="text" name="name"></td>     
+                    <td><input id="name" type="text" name="name" onchange="OchangeName()"></td>     
                 </tr>
                 <tr> <td colspan="2"><span id="errorName"></span></td></tr>
                 <tr>
                     <td><label for="">Email</label></td>
-                    <td><input id="email" type="text"></td>
+                    <td><input id="email" type="text" onchange="OchangeEmail()"></td>
                 </tr>
                 <tr> <td colspan="2"><span id="errorEmail"></span></td></tr>
                 <tr>
@@ -38,12 +38,12 @@
                 </tr>
                 <tr>
                     <td><label><b>Password</b></label></td>
-                    <td> <input id="pass" type="password"></td>
+                    <td> <input id="pass" type="password" onchange="OchangePass()"></td>
                     <tr> <td colspan="2"><span id="errorPass"></span></td></tr>
                 </tr>
                 <tr>
                     <td><label><b>Confirm Password</b></label></td>
-                    <td> <input id="confpass" type="password"></td>
+                    <td> <input id="confpass" type="password" onchange="OchangeConfPass()"></td>
                     <tr> <td colspan="2"><span id="errorConfpass"></span></td></tr>
                 </tr>
                 <tr>
